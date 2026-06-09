@@ -9,6 +9,6 @@ jobs:
       - name: Checkout # 処理名（チェックアウト）
         uses: actions/checkout@v4 # Runner version 4で実行
       - name: Permission Setting # 処理名（権限設定）
-        run: chmod +x saidai.sh test_saidai.sh # chmodで権限付与
+        run: chmod +x saidai.sh test-saidai.sh # chmodで権限付与
       - name: Test Run # 処理名
-        run: ./test_saidai.sh
+        run: ./test-saidai.sh
